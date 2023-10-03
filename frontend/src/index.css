@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  nav ul li a {
+    @apply text-[14px] font-[500] leading-[24px] text-[#000];
+  }
+}
+
+@font-face {
+  font-family: "Gulfs";
+  src: local("Gulfs"), url("/fonts/GulfsDisplay-Expanded.woff2") format("woff2");
+}
+
+nav button {
+  box-shadow: 0 6px 0 -2px #000;
+}
+
+#hero h1 {
+  text-shadow: 3px 5px 0 #000;
+  outline-color: #f8450b;
+  outline-offset: 0px;
+  outline-style: none;
+  outline-width: 3px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+#hero .rolling-img {
+  animation: roll 6s infinite linear;
+}
+@keyframes roll {
+  to {
+    transform: rotate(360deg);
+  }
+}
