@@ -8,6 +8,23 @@
   nav ul li a {
     @apply text-[14px] font-[500] leading-[24px] text-[#000];
   }
+
+  .slider div p {
+    @apply whitespace-nowrap font-Gulfs text-[13.226px];
+  }
+
+  .about-section h1 {
+    @apply font-Gulfs text-[49px] text-center;
+  }
+  .about-section .emoji {
+    @apply w-[70px];
+  }
+  .about-section .text-border {
+    color: #fffdf1;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 2px 2px 0 #000;
+  }
 }
 
 @font-face {
@@ -35,5 +52,17 @@ nav button {
 @keyframes roll {
   to {
     transform: rotate(360deg);
+  }
+}
+
+.slider div p {
+  text-shadow: 0 0 0 #000;
+}
+.slider div img {
+  animation: roll-left 7s infinite linear;
+}
+@keyframes roll-left {
+  to {
+    transform: rotate(-360deg);
   }
 }
