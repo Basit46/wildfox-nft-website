@@ -40,6 +40,11 @@
     outline-style: none;
     outline-width: 3px;
   }
+
+  .member a {
+    @apply h-[60px] w-[60px] rounded-full border-black border-[2px] grid place-items-center;
+    box-shadow: 0 4px 0 1px #000;
+  }
 }
 
 @font-face {

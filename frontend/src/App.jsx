@@ -5,6 +5,7 @@ import sticker from "./assets/sticker.svg";
 import About from "./sections/About";
 import Collage from "./sections/Collage";
 import Roadmap from "./sections/Roadmap";
+import Team from "./sections/Team";
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
       <About />
       <Collage />
       <Roadmap />
+      <Team />
     </div>
   );
 };
