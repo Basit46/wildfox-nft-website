@@ -2,6 +2,7 @@ import React from "react";
 import collage1 from "../assets/collage1.png";
 import collage2 from "../assets/collage2.png";
 import collage3 from "../assets/collage3.png";
+import maskIcon from "../assets/mask.svg";
 
 const Collage = () => {
   return (
@@ -27,6 +28,35 @@ const Collage = () => {
       </div>
 
       {/* Marquees */}
+      <div className="relative w-full mt-[200px] h-[50vh] overflow-hidden">
+        <div className="marquee absolute left-[-10px] top-[175px] bg-[#fbbf2d] origin-left rotate-[-6deg]">
+          <p>WILD FOX SQUAD</p>
+          <img src={maskIcon} alt="mask icon" />
+          <p>WILD FOX SQUAD</p>
+          <img src={maskIcon} alt="mask icon" />
+          <p>WILD FOX SQUAD</p>
+          <img src={maskIcon} alt="mask icon" />
+          <p>WILD FOX SQUAD</p>
+          <img src={maskIcon} alt="mask icon" />
+          <p>WILD FOX SQUAD</p>
+          <img src={maskIcon} alt="mask icon" />
+          <p>WILD FOX SQUAD</p>
+        </div>
+
+        <div className="marquee absolute left-[-10px] top-[26px] bg-[#f8450b] origin-left rotate-[6deg]">
+          <p>WILD FOX SQUAD</p>
+          <img src={maskIcon} alt="mask icon" />
+          <p>WILD FOX SQUAD</p>
+          <img src={maskIcon} alt="mask icon" />
+          <p>WILD FOX SQUAD</p>
+          <img src={maskIcon} alt="mask icon" />
+          <p>WILD FOX SQUAD</p>
+          <img src={maskIcon} alt="mask icon" />
+          <p>WILD FOX SQUAD</p>
+          <img src={maskIcon} alt="mask icon" />
+          <p>WILD FOX SQUAD</p>
+        </div>
+      </div>
     </div>
   );
 };

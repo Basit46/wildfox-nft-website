@@ -25,11 +25,30 @@
     -webkit-text-stroke-color: black;
     text-shadow: 2px 2px 0 #000;
   }
+
+  .marquee {
+    @apply border-y-[4px] border-black w-fit py-[21px] flex items-center gap-[27.320px];
+  }
+  .marquee p {
+    @apply whitespace-nowrap font-Gulfs text-[35px] leading-[49px] font-bold;
+  }
+
+  .roadmap-box {
+    box-shadow: 0 7px 0 0 #000;
+    outline-color: #333;
+    outline-offset: 2px;
+    outline-style: none;
+    outline-width: 3px;
+  }
 }
 
 @font-face {
   font-family: "Gulfs";
   src: local("Gulfs"), url("/fonts/GulfsDisplay-Expanded.woff2") format("woff2");
+}
+
+.text-shadow {
+  text-shadow: 0 0 0 #000;
 }
 
 nav button {

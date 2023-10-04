@@ -4,6 +4,7 @@ import Navbar from "./sections/Navbar";
 import sticker from "./assets/sticker.svg";
 import About from "./sections/About";
 import Collage from "./sections/Collage";
+import Roadmap from "./sections/Roadmap";
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
       </div>
       <About />
       <Collage />
+      <Roadmap />
     </div>
   );
 };
