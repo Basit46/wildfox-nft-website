@@ -8,6 +8,7 @@ import Team from "./sections/Team";
 import FAQ from "./sections/FAQ";
 import Footer from "./sections/Footer";
 import Slider from "./sections/Slider";
+import RoadmapsWrapper from "./sections/RoadmapsWrapper";
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <About />
       <Collage />
       <Roadmap />
+      <RoadmapsWrapper />
       <Team />
       <FAQ />
       <Footer />

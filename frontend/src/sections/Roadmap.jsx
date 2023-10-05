@@ -1,11 +1,9 @@
 import React from "react";
 import ourIcon from "../assets/ourIcon.svg";
-import RoadmapBox from "../components/RoadmapBox";
-import { roadmaplist } from "../data/roadmaps";
 
 const Roadmap = () => {
   return (
-    <div id="roadmap" className="mt-[200px] w-full px-[120px]">
+    <div id="roadmap" className="mt-[200px] w-full h-fit px-[120px]">
       <div className="relative w-full flex justify-between items-end">
         <img
           className="w-[75.38px] absolute left-[-30px] top-0 rotate-[-30deg]"
@@ -20,12 +18,6 @@ const Roadmap = () => {
           Squad. We have a lot of ideas and concepts that we are working on.
           Join our squad!
         </p>
-      </div>
-
-      <div className="mt-[200px]">
-        {roadmaplist.map((item, index) => (
-          <RoadmapBox key={index} index={index} item={item} />
-        ))}
       </div>
     </div>
   );

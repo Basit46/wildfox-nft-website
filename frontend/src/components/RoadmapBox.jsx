@@ -1,9 +1,37 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import badge from "../assets/badge.png";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const RoadmapBox = ({ item, index }) => {
+gsap.registerPlugin(ScrollTrigger);
+
+const RoadmapBox = ({ item, index, wrapperRef }) => {
+  const boxRef = useRef();
+  const topVal = 600 * index;
+
+  useEffect(() => {
+    gsap.fromTo(
+      boxRef.current,
+      {
+        y: topVal,
+      },
+      {
+        y: 0,
+        duration: 1,
+        scrollTrigger: {
+          trigger: boxRef.current,
+          scrub: 1,
+          start: `top ${20}%`,
+        },
+      }
+    );
+  }, []);
+
   return (
-    <div className="roadmap-box relative w-full h-[442px] xmd:h-[600px] border-[2px] border-black rounded-[20px] flex gap-[20px] xmd:gap-[60px] justify-center items-center">
+    <div
+      ref={boxRef}
+      className="roadmap-box absolute left-0 w-full h-[442px] xmd:h-[600px] bg-white border-[2px] border-black rounded-[20px] flex gap-[20px] xmd:gap-[60px] justify-center items-center"
+    >
       {/* Done badge */}
       <img
         className={`${
