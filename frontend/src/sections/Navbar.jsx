@@ -1,27 +1,42 @@
 import React from "react";
 import logo from "../assets/logo.svg";
+import { Link as ScrollLink } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <nav className="w-full bg-[#fbbf2d] px-[27px] py-[24px] flex justify-between items-center">
+    <nav
+      id="nav"
+      className="w-full bg-[#fbbf2d] px-[27px] py-[24px] flex justify-between items-center"
+    >
       <img src={logo} className="w-[250px] h-[72.05px]" alt="logo" />
 
       <ul className="flex gap-[45px] items-center">
         <li>
-          <a href="#">ABOUT</a>
+          <ScrollLink to="about" duration={1000} smooth="true">
+            ABOUT
+          </ScrollLink>
         </li>
         <li>
-          <a href="#">ROADMAP</a>
+          <ScrollLink to="roadmap" duration={1000} smooth="true">
+            ROADMAP
+          </ScrollLink>
         </li>
         <li>
-          <a href="#">TEAM</a>
+          <ScrollLink to="team" duration={1000} smooth="true">
+            TEAM
+          </ScrollLink>
         </li>
         <li>
-          <a href="#">FOLLOW US</a>
+          <a href="https://twitter.com/Basit0282" target="blank">
+            FOLLOW US
+          </a>
         </li>
       </ul>
 
-      <button className="h-fit bg-white border-black border-[3px] py-[16px] px-[34px] flex items-center gap-[8px] rounded-[8px]">
+      <button
+        onClick={() => alert("Mint coming soon")}
+        className="h-fit bg-white border-black border-[3px] py-[16px] px-[34px] flex items-center gap-[8px] rounded-[8px]"
+      >
         <p className="text-[14px] font-bold leading-[20px]">MINT NFT</p>{" "}
         <Arrow />
       </button>

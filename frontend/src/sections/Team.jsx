@@ -8,7 +8,10 @@ import sticker from "../assets/sticker2.svg";
 
 const Team = () => {
   return (
-    <div className="team-section mt-[50px] py-[100px] w-full bg-[#f9f0dc]">
+    <div
+      id="team"
+      className="team-section mt-[50px] py-[100px] w-full bg-[#f9f0dc]"
+    >
       <div className="mx-auto w-fit relative">
         <h1 className="font-Gulfs text-[84px]">TEAM</h1>
         <img

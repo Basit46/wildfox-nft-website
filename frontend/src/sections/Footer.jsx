@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../assets/logoft.svg";
 import arrow1 from "../assets/arrowup.svg";
 import arrow2 from "../assets/ftarrow2.svg";
@@ -6,8 +6,20 @@ import discord from "../assets/ds.svg";
 import insta from "../assets/ftig.svg";
 import twitter from "../assets/fttwt.svg";
 import opensea from "../assets/os.svg";
+import { Link as ScrollLink } from "react-scroll";
 
 const Footer = () => {
+  const [showArrow, setShowArrow] = useState(false);
+  useEffect(() => {
+    const handleScroll = () => {
+      window.scrollY > 1000 ? setShowArrow(true) : setShowArrow(false);
+    };
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <footer className="h-fit pt-[70px] pb-[100px]">
       <img className="mx-auto" src={logo} alt="logo" />
@@ -31,7 +43,7 @@ const Footer = () => {
         <a href="#">
           <img src={insta} alt="social icon" />
         </a>
-        <a href="#">
+        <a href="https://twitter.com/Basit0282" target="blank">
           <img src={twitter} alt="social icon" />
         </a>
         <a href="#">
@@ -42,9 +54,16 @@ const Footer = () => {
         </a>
       </div>
 
-      <div className="fixed bottom-[50px] left-[30px] arrow1 w-[64px] h-[64px] rounded-full border-[2px] border-black grid place-items-center">
+      <ScrollLink
+        className={`${
+          showArrow ? "opacity-100" : "opacity-0"
+        } z-[2] cursor-pointer duration-300 bg-white fixed bottom-[50px] left-[30px] arrow1 w-[64px] h-[64px] rounded-full border-[2px] border-black grid place-items-center`}
+        to="nav"
+        duration={1000}
+        smooth="true"
+      >
         <img src={arrow1} alt="arrow" />
-      </div>
+      </ScrollLink>
     </footer>
   );
 };

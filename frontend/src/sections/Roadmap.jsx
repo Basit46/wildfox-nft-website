@@ -5,7 +5,7 @@ import { roadmaplist } from "../data/roadmaps";
 
 const Roadmap = () => {
   return (
-    <div className="mt-[200px] w-full px-[120px]">
+    <div id="roadmap" className="mt-[200px] w-full px-[120px]">
       <div className="relative w-full flex justify-between items-end">
         <img
           className="w-[75.38px] absolute left-[-30px] top-0 rotate-[-30deg]"

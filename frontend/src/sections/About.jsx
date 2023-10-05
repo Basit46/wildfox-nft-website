@@ -7,7 +7,7 @@ import arrow from "../assets/aboutarrow.svg";
 
 const About = () => {
   return (
-    <div className="about-section w-full min-h-[60vh] my-[80px]">
+    <div id="about" className="about-section w-full min-h-[60vh] my-[80px]">
       <img className="mx-auto mb-[40px]" src={about} alt="about text" />
       <div className="relative">
         <h1 className="flex items-center gap-[20px] justify-center">

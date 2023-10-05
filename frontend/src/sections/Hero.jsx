@@ -38,9 +38,21 @@ const Hero = () => {
           BLOCKCHAIN.
         </p>
         <ul>
-          <li className="text-end">Twitter</li>
-          <li className="text-end">Instagram</li>
-          <li className="text-end">Discord</li>
+          <li className="text-end">
+            <a href="https://twitter.com/Basit0282" target="blank">
+              Twitter
+            </a>
+          </li>
+          <li className="text-end">
+            <a href="https://twitter.com/Basit0282" target="blank">
+              Instagram
+            </a>
+          </li>
+          <li className="text-end">
+            <a href="https://twitter.com/Basit0282" target="blank">
+              Discord
+            </a>
+          </li>
         </ul>
       </div>
 
