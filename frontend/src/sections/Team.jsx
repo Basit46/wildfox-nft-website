@@ -57,14 +57,28 @@ const Team = () => {
         </div>
       </div>
 
-      <div className="slide my-[130px] w-full overflow-hidden border-y-[1px] border-[#bebebe] py-[17px]">
-        <div className="w-fit flex items-center gap-[80px]">
-          <p>10.000 UNIQUE NFT</p>
-          <img src={sticker} alt="sticker" />
-          <p>10.000 UNIQUE NFT</p>
-          <img src={sticker} alt="sticker" />
-          <p>10.000 UNIQUE NFT</p>
-          <img src={sticker} alt="sticker" />
+      <div className="slide my-[130px] w-full overflow-hidden border-y-[1px] border-[#bebebe]">
+        <div className="w-fit flex items-center">
+          <div className="w-fit flex items-center gap-[80px] ml-[80px]">
+            <p>10.000 UNIQUE NFT</p>
+            <span>
+              <img src={sticker} alt="sticker" />
+            </span>
+            <p>10.000 UNIQUE NFT</p>
+            <span>
+              <img src={sticker} alt="sticker" />
+            </span>
+          </div>
+          <div className="w-fit flex items-center gap-[80px] ml-[80px]">
+            <p>10.000 UNIQUE NFT</p>
+            <span>
+              <img src={sticker} alt="sticker" />
+            </span>
+            <p>10.000 UNIQUE NFT</p>
+            <span>
+              <img src={sticker} alt="sticker" />
+            </span>
+          </div>
         </div>
       </div>
     </div>

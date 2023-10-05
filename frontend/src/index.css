@@ -9,8 +9,15 @@
     @apply text-[14px] font-[500] leading-[24px] text-[#000] cursor-pointer;
   }
 
+  .slider > div {
+    animation: slide-left 12s infinite linear;
+  }
+  .slider div img {
+    animation: roll-left 8s infinite linear;
+  }
   .slider div p {
-    @apply whitespace-nowrap font-Gulfs text-[13.226px];
+    text-shadow: 0 0 0 #000;
+    @apply whitespace-nowrap font-Gulfs text-[15.3px];
   }
 
   .about-section h1 {
@@ -27,7 +34,19 @@
   }
 
   .marquee {
-    @apply border-y-[4px] border-black w-fit py-[21px] flex items-center gap-[27.320px];
+    @apply border-y-[4px] border-black;
+  }
+  .marquee > div {
+    animation: slide-right 30s infinite linear;
+    transform: translate(-50%);
+  }
+  @keyframes slide-right {
+    to {
+      transform: translate(0%);
+    }
+  }
+  .marquee > div > div {
+    @apply w-fit py-[21px] flex items-center gap-[27px];
   }
   .marquee p {
     @apply whitespace-nowrap font-Gulfs text-[35px] leading-[49px] font-bold;
@@ -46,8 +65,14 @@
     box-shadow: 0 4px 0 1px #000;
   }
 
+  .team-section .slide > div {
+    animation: slide-left 12s infinite linear;
+  }
   .team-section .slide p {
     @apply font-Gulfs text-[35.84px] whitespace-nowrap;
+  }
+  .team-section span {
+    @apply w-[221px] h-[222px] overflow-hidden grid place-items-center;
   }
   .team-section .slide img {
     animation: roll-left 6s infinite linear;
@@ -106,14 +131,14 @@ nav button {
   }
 }
 
-.slider div p {
-  text-shadow: 0 0 0 #000;
-}
-.slider div img {
-  animation: roll-left 7s infinite linear;
-}
 @keyframes roll-left {
   to {
     transform: rotate(-360deg);
+  }
+}
+
+@keyframes slide-left {
+  to {
+    transform: translateX(-50%);
   }
 }
