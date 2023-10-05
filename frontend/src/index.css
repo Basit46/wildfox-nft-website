@@ -45,6 +45,33 @@
     @apply h-[60px] w-[60px] rounded-full border-black border-[2px] grid place-items-center;
     box-shadow: 0 4px 0 1px #000;
   }
+
+  .team-section .slide p {
+    @apply font-Gulfs text-[35.84px] whitespace-nowrap;
+  }
+  .team-section .slide img {
+    animation: roll-left 6s infinite linear;
+  }
+
+  .question {
+    box-shadow: 0 7px 0 0 #000;
+  }
+
+  footer h1 {
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 3px 0 0 #000;
+  }
+  footer a {
+    @apply w-[150px] h-[150px] rounded-full border-black border-[2px] grid place-items-center;
+    box-shadow: 0 4px 0 1px #000;
+  }
+  footer .arrow1 {
+    box-shadow: 0 4px 0 1px #000;
+  }
+  footer .arrow2 {
+    transform: rotateX(-180deg) rotateY(0deg) rotateZ(-120deg);
+  }
 }
 
 @font-face {

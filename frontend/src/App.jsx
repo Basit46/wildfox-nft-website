@@ -6,6 +6,8 @@ import About from "./sections/About";
 import Collage from "./sections/Collage";
 import Roadmap from "./sections/Roadmap";
 import Team from "./sections/Team";
+import FAQ from "./sections/FAQ";
+import Footer from "./sections/Footer";
 
 const App = () => {
   return (
@@ -32,6 +34,8 @@ const App = () => {
       <Collage />
       <Roadmap />
       <Team />
+      <FAQ />
+      <Footer />
     </div>
   );
 };

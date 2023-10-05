@@ -4,10 +4,11 @@ import mem1 from "../assets/mem1.svg";
 import mem2 from "../assets/mem2.svg";
 import twt from "../assets/twtLogo.svg";
 import ig from "../assets/igLogo.svg";
+import sticker from "../assets/sticker2.svg";
 
 const Team = () => {
   return (
-    <div className="mt-[50px] py-[100px] w-full bg-[#f9f0dc]">
+    <div className="team-section mt-[50px] py-[100px] w-full bg-[#f9f0dc]">
       <div className="mx-auto w-fit relative">
         <h1 className="font-Gulfs text-[84px]">TEAM</h1>
         <img
@@ -50,6 +51,17 @@ const Team = () => {
               <img src={twt} alt="twiiter logo" />
             </a>
           </div>
+        </div>
+      </div>
+
+      <div className="slide my-[130px] w-full overflow-hidden border-y-[1px] border-[#bebebe] py-[17px]">
+        <div className="w-fit flex items-center gap-[80px]">
+          <p>10.000 UNIQUE NFT</p>
+          <img src={sticker} alt="sticker" />
+          <p>10.000 UNIQUE NFT</p>
+          <img src={sticker} alt="sticker" />
+          <p>10.000 UNIQUE NFT</p>
+          <img src={sticker} alt="sticker" />
         </div>
       </div>
     </div>
