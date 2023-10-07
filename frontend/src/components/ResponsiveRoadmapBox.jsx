@@ -41,7 +41,7 @@ const ResponsiveRoadmapBox = ({ item, index }) => {
           </span>
         </div>
 
-        <h1 className="my-[10px] xmd:my-0 text-center xmd:text-left text-shadow font-Gulfs text-[28px] xmd:text-[37.8px] leading-[1.2]">
+        <h1 className="my-[10px] xmd:my-0 text-center xmd:text-left text-shadow font-Gulfs text-[25px] vsm:text-[28px] xmd:text-[37.8px] leading-[1.2]">
           {item.title}
         </h1>
         <p className="text-center xmd:text-left text-[16.8px] leading-[23.52px]">
