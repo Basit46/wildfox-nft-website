@@ -5,7 +5,7 @@ export default {
     extend: {
       screens: {
         vsm: "400px",
-        xmd: "800px",
+        xmd: "900px",
       },
       fontFamily: {
         SpaceGrotesk: ["Space Grotesk", "sans-serif"],

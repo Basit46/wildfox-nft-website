@@ -1,41 +1,86 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import logo from "../assets/logo.svg";
 import { Link as ScrollLink } from "react-scroll";
+import gsap from "gsap";
+import { FaBars } from "react-icons/fa";
 
-const Navbar = () => {
+const Navbar = ({ isOpen, setIsOpen }) => {
+  const navItems = useRef([]);
+
+  useEffect(() => {
+    navItems.current.forEach((item) =>
+      gsap.fromTo(item, { yPercent: 100 }, { yPercent: 0, duration: 0.5 })
+    );
+  }, []);
   return (
     <nav
       id="nav"
       className="w-full bg-[#fbbf2d] px-[27px] py-[24px] flex justify-between items-center"
     >
-      <img src={logo} className="w-[250px] h-[72.05px]" alt="logo" />
+      <img
+        ref={(e) => navItems.current.push(e)}
+        src={logo}
+        className="w-[250px] h-[72.05px] z-[5]"
+        alt="logo"
+      />
 
-      <ul className="flex gap-[45px] items-center">
-        <li>
-          <ScrollLink to="about" duration={1000} smooth="true">
+      <ul
+        className={`fixed z-[4] ${
+          isOpen ? "top-0" : "top-[-130%]"
+        } left-0 bottom-0 duration-500 w-full xmd:w-fit h-[100vh] xmd:h-fit bg-[#f0ecd6] xmd:bg-transparent xmd:static flex flex-col xmd:flex-row justify-center xmd:justify-normal gap-[45px] items-center`}
+      >
+        <li ref={(e) => navItems.current.push(e)}>
+          <ScrollLink
+            onClick={() => setIsOpen(false)}
+            to="about"
+            duration={1000}
+            smooth="true"
+          >
             ABOUT
           </ScrollLink>
         </li>
-        <li>
-          <ScrollLink to="roadmap" duration={1000} smooth="true">
+        <li ref={(e) => navItems.current.push(e)}>
+          <ScrollLink
+            onClick={() => setIsOpen(false)}
+            to="roadmap"
+            duration={1000}
+            smooth="true"
+          >
             ROADMAP
           </ScrollLink>
         </li>
-        <li>
-          <ScrollLink to="team" duration={1000} smooth="true">
+        <li ref={(e) => navItems.current.push(e)}>
+          <ScrollLink
+            onClick={() => setIsOpen(false)}
+            to="team"
+            duration={1000}
+            smooth="true"
+          >
             TEAM
           </ScrollLink>
         </li>
-        <li>
-          <a href="https://twitter.com/Basit0282" target="blank">
+        <li ref={(e) => navItems.current.push(e)}>
+          <a
+            onClick={() => setIsOpen(false)}
+            href="https://twitter.com/Basit0282"
+            target="blank"
+          >
             FOLLOW US
           </a>
         </li>
       </ul>
 
+      <div className="xmd:hidden mr-[5px] sm:mr-[40px] flex-1 flex justify-end">
+        <FaBars
+          onClick={() => setIsOpen((prev) => !prev)}
+          className="text-[25px] z-[5] cursor-pointer"
+        />
+      </div>
+
       <button
+        ref={(e) => navItems.current.push(e)}
         onClick={() => alert("Mint coming soon")}
-        className="h-fit bg-white border-black border-[3px] py-[16px] px-[34px] flex items-center gap-[8px] rounded-[8px]"
+        className="h-fit z-[5] bg-white border-black border-[3px] py-[16px] px-[34px] flex items-center gap-[8px] rounded-[8px]"
       >
         <p className="text-[14px] font-bold leading-[20px]">MINT NFT</p>{" "}
         <Arrow />

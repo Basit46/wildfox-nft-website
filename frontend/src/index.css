@@ -6,7 +6,7 @@
 
 @layer components {
   nav ul li a {
-    @apply text-[14px] font-[500] leading-[24px] text-[#000] cursor-pointer;
+    @apply text-[28px] xmd:text-[14px] font-Gulfs xmd:font-SpaceGrotesk font-[500] leading-[24px] text-[#000] cursor-pointer;
   }
 
   .slider > div {
@@ -21,10 +21,10 @@
   }
 
   .about-section h1 {
-    @apply font-Gulfs text-[49px] text-center;
+    @apply font-Gulfs text-[26px] md:text-[40px] xmd:text-[47px] xl:text-[49px] leading-[1.2] xmd:leading-normal text-center;
   }
   .about-section .emoji {
-    @apply w-[70px];
+    @apply hidden xmd:block w-[70px];
   }
   .about-section .text-border {
     color: #fffdf1;
@@ -46,10 +46,10 @@
     }
   }
   .marquee > div > div {
-    @apply w-fit py-[21px] flex items-center gap-[27px];
+    @apply w-fit py-[7px] xmd:py-[21px] flex items-center gap-[27px];
   }
   .marquee p {
-    @apply whitespace-nowrap font-Gulfs text-[35px] leading-[49px] font-bold;
+    @apply whitespace-nowrap font-Gulfs text-[20px] xmd:text-[35px] leading-[49px] font-bold;
   }
 
   .roadmap-box {
@@ -68,13 +68,17 @@
   .team-section .slide > div {
     animation: slide-left 12s infinite linear;
   }
+  .team-section .slide > div > div {
+    @apply py-[10px] xmd:py-0;
+  }
   .team-section .slide p {
-    @apply font-Gulfs text-[35.84px] whitespace-nowrap;
+    @apply font-Gulfs text-[25px] xmd:text-[35.84px] whitespace-nowrap;
   }
   .team-section span {
-    @apply w-[221px] h-[222px] overflow-hidden grid place-items-center;
+    @apply w-[100px] xmd:w-[221px] h-[100px] xmd:h-[222px] xmd:overflow-hidden grid place-items-center;
   }
   .team-section .slide img {
+    @apply w-fit;
     animation: roll-left 6s infinite linear;
   }
 
@@ -88,8 +92,11 @@
     text-shadow: 3px 0 0 #000;
   }
   footer a {
-    @apply w-[150px] h-[150px] rounded-full border-black border-[2px] grid place-items-center;
+    @apply w-[80px] xmd:w-[150px] h-[80px] xmd:h-[150px] p-[20px] xmd:p-0 rounded-full border-black border-[2px] grid place-items-center;
     box-shadow: 0 4px 0 1px #000;
+  }
+  footer a img {
+    @apply w-full xmd:w-fit h-fit;
   }
   footer .arrow1 {
     box-shadow: 0 4px 0 1px #000;

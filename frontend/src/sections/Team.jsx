@@ -21,12 +21,14 @@ const Team = () => {
         />
       </div>
 
-      <div className="mt-[100px] flex justify-center gap-[50px]">
-        <div className="member w-[530px] h-[779px] flex flex-col justify-between rounded-[20px] p-[70px] bg-[#fffdf1] border-[1px] border-black ">
-          <img src={mem1} alt="member" />
+      <div className="mt-[100px] flex flex-col xl:flex-row items-center xl:items-start justify-center gap-[50px]">
+        <div className="member w-[80%] xmd:w-[530px] h-fit xl:h-[779px] flex flex-col items-center xl:items-start justify-between gap-[20px] xl:gap-0 rounded-[20px] p-[30px] xmd:p-[70px] bg-[#fffdf1] border-[1px] border-black ">
+          <img className="w-[200px] xmd:w-auto" src={mem1} alt="member" />
           <div>
             <h1 className="font-Gulfs text-[32px] text-center">BASIT</h1>
-            <p className="text-[28px] text-[#727171] text-center">DEVELOPER</p>
+            <p className="text-[20px] xmd:text-[28px] text-[#727171] text-center">
+              DEVELOPER
+            </p>
           </div>
           <div className="flex justify-center gap-[20px]">
             <a href="https://twitter.com/Basit0282" target="blank">
@@ -38,11 +40,11 @@ const Team = () => {
           </div>
         </div>
 
-        <div className="member w-[530px] h-[779px] flex flex-col justify-between rounded-[20px] p-[70px] bg-[#fffdf1] border-[1px] border-black ">
-          <img src={mem2} alt="member" />
+        <div className="member w-[80%] xmd:w-[530px] h-fit xl:h-[779px] flex flex-col items-center xl:items-start justify-between gap-[20px] xl:gap-0 rounded-[20px] p-[30px] xmd:p-[70px] bg-[#fffdf1] border-[1px] border-black ">
+          <img className="w-[200px] xmd:w-auto" src={mem2} alt="member" />
           <div>
             <h1 className="font-Gulfs text-[32px] text-center">NICK</h1>
-            <p className="text-[28px] text-[#727171] text-center">
+            <p className="text-[20px] xmd:text-[28px] text-[#727171] text-center">
               DESIGNER & CO-CREATOR
             </p>
           </div>
@@ -57,7 +59,7 @@ const Team = () => {
         </div>
       </div>
 
-      <div className="slide my-[130px] w-full overflow-hidden border-y-[1px] border-[#bebebe]">
+      <div className="slide mt-[50px] xmd:my-[130px] w-full overflow-hidden border-y-[1px] border-[#bebebe]">
         <div className="w-fit flex items-center">
           <div className="w-fit flex items-center gap-[80px] ml-[80px]">
             <p>10.000 UNIQUE NFT</p>

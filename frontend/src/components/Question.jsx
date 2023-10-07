@@ -9,7 +9,7 @@ const Question = ({ question }) => {
       className="question w-full h-fit mb-[30px] bg-[#fffdf1] border-[1px] border-black p-[30px] rounded-[20px]"
     >
       <div className="w-full flex items-center justify-between">
-        <h1 className="uppercase font-Gulfs text-[42px] leading-[1.2]">
+        <h1 className="uppercase font-Gulfs text-[20px] md:text-[30px] xmd:text-[42px] leading-[1.2]">
           {question.text}
         </h1>
         <button>
@@ -22,7 +22,7 @@ const Question = ({ question }) => {
       </div>
       <div
         className={`${
-          isOpen ? "h-[90px]" : "h-0"
+          isOpen ? "h-[140px] md:h-[90px]" : "h-0"
         } duration-300 overflow-hidden`}
       >
         <p className="pt-[30px] text-[15.4px] tracking-[-0.154px] leading-[23.1px]">

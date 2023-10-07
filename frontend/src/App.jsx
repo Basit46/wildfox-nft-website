@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Hero from "./sections/Hero";
 import Navbar from "./sections/Navbar";
 import About from "./sections/About";
@@ -11,9 +11,14 @@ import Slider from "./sections/Slider";
 import RoadmapsWrapper from "./sections/RoadmapsWrapper";
 
 const App = () => {
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="max-w-[1400px] w-full mx-auto font-SpaceGrotesk">
-      <Navbar />
+    <div
+      className={`${
+        isOpen && "h-[100vh] overflow-y-hidden"
+      } max-w-[1400px] w-full mx-auto font-SpaceGrotesk`}
+    >
+      <Navbar isOpen={isOpen} setIsOpen={setIsOpen} />
       <Hero />
       <Slider />
       <About />

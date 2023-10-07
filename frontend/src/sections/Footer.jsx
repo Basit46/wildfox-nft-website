@@ -21,25 +21,25 @@ const Footer = () => {
     };
   }, []);
   return (
-    <footer className="h-fit pt-[70px] pb-[100px]">
+    <footer className="h-fit pt-[70px] pb-[130px] xmd:pb-[100px]">
       <img className="mx-auto" src={logo} alt="logo" />
 
       <div className="relative">
-        <h1 className="mt-[40px] mb-[20px] font-Gulfs text-white text-[84px] leading-[75.6px] text-center">
+        <h1 className="mt-[40px] mb-[20px] font-Gulfs text-white text-[55px] xmd:text-[84px] leading-[1.1] xmd:leading-[75.6px] text-center">
           FOLLOW US
         </h1>
-        <h2 className="font-Gulfs text-[84px] leading-[75.6px] text-center">
+        <h2 className="font-Gulfs text-[55px] xmd:text-[84px] leading-[1.1] xmd:leading-[75.6px] text-center">
           ON SOCIAL <br /> MEDIA
         </h2>
 
         <img
-          className="arrow2 absolute left-[120px] bottom-[-120px] w-[180.92px]"
+          className="arrow2 hidden xmd:block absolute left-[30px] xl:left-[120px] bottom-[-120px] w-[180.92px]"
           src={arrow2}
           alt="arrow"
         />
       </div>
 
-      <div className="mt-[100px] flex justify-center gap-[20px]">
+      <div className="mt-[60px] xmd:mt-[100px] flex justify-center gap-[20px]">
         <a href="#">
           <img src={insta} alt="social icon" />
         </a>

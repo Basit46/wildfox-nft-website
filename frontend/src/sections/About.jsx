@@ -7,7 +7,7 @@ import arrow from "../assets/aboutarrow.svg";
 
 const About = () => {
   return (
-    <div id="about" className="about-section w-full min-h-[60vh] my-[80px]">
+    <div id="about" className="about-section w-full h-fit my-[80px]">
       <img className="mx-auto mb-[40px]" src={about} alt="about text" />
       <div className="relative">
         <h1 className="flex items-center gap-[20px] justify-center">
@@ -30,12 +30,12 @@ const About = () => {
 
         {/* Arrow */}
         <img
-          className="absolute bottom-[-100%] right-[60px]"
+          className="hidden xmd:block absolute bottom-[-100%] right-[60px]"
           src={arrow}
           alt="arrow"
         />
       </div>
-      <p className="w-[674px] mx-auto mt-[40px] text-[#333] text-center text-[16.8px] font-medium leading-[23.5px]">
+      <p className="w-[80%] md:w-[674px] mx-auto mt-[40px] text-[#333] text-center text-[16.8px] font-medium leading-[23.5px]">
         Welcome to our Wild Fox Squad! Meet our collection of 10k unique Wild
         Foxes. Support and join our community, crazy adventures and fantastic
         prizes are waiting for you.

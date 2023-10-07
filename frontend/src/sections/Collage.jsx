@@ -41,7 +41,7 @@ const Collage = () => {
   }, []);
 
   return (
-    <div ref={collageSection} className="w-full mt-[200px]">
+    <div ref={collageSection} className="w-full mt-[100px] xmd:mt-[200px]">
       <div className="w-full h-fit overflow-x-hidden">
         <div className="min-w-[2000px]">
           <img

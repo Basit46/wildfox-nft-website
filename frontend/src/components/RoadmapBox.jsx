@@ -5,7 +5,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const RoadmapBox = ({ item, index, wrapperRef }) => {
+const RoadmapBox = ({ item, index }) => {
   const boxRef = useRef();
   const topVal = 600 * index;
 
