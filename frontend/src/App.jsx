@@ -9,6 +9,7 @@ import FAQ from "./sections/FAQ";
 import Footer from "./sections/Footer";
 import Slider from "./sections/Slider";
 import RoadmapsWrapper from "./sections/RoadmapsWrapper";
+import ResponsiveRoadmapsWrapper from "./sections/ResponsiveRoadmapsWrapper";
 
 const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +26,7 @@ const App = () => {
       <Collage />
       <Roadmap />
       <RoadmapsWrapper />
+      <ResponsiveRoadmapsWrapper />
       <Team />
       <FAQ />
       <Footer />

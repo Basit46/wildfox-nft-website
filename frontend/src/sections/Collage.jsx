@@ -66,7 +66,7 @@ const Collage = () => {
       </div>
 
       {/* Marquees */}
-      <div className="relative w-full mt-[120px] h-[70vh] overflow-y-hidden overflow-x-hidden">
+      <div className="relative w-full vsm:mt-[120px] h-[70vh] overflow-y-hidden overflow-x-hidden">
         <div className="marquee absolute bg-[#fbbf2d] left-[-1%] top-[312px] origin-left rotate-[-6deg]">
           <div className="flex">
             <div className="ml-[27px]">
@@ -100,7 +100,7 @@ const Collage = () => {
           </div>
         </div>
 
-        <div className="marquee absolute bg-[#f8450b] left-[-1%] top-[160px] origin-left rotate-[6deg]">
+        <div className="marquee absolute bg-[#f8450b] left-[-1%] top-[210px] vsm:top-[160px] origin-left rotate-[6deg]">
           <div className="flex">
             <div className="ml-[27px]">
               <p>WILD FOX SQUAD</p>

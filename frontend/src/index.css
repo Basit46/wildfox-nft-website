@@ -92,7 +92,7 @@
     text-shadow: 3px 0 0 #000;
   }
   footer a {
-    @apply w-[80px] xmd:w-[150px] h-[80px] xmd:h-[150px] p-[20px] xmd:p-0 rounded-full border-black border-[2px] grid place-items-center;
+    @apply w-[60px] vsm:w-[80px] xmd:w-[150px] h-[60px] vsm:h-[80px] xmd:h-[150px] p-[10px] vsm:p-[20px] xmd:p-0 rounded-full border-black border-[2px] grid place-items-center;
     box-shadow: 0 4px 0 1px #000;
   }
   footer a img {

@@ -3,7 +3,7 @@ import sticker from "../assets/sticker.svg";
 
 const Slider = () => {
   return (
-    <div className="slider w-full overflow-x-hidden py-[32px] border-b-[#e3e1d7] border-b-[1px]">
+    <div className="slider w-full overflow-x-hidden py-[15px] vsm:py-[32px] border-b-[#e3e1d7] border-b-[1px]">
       <div className="w-fit flex items-center">
         <div className="w-fit flex gap-[30px] items-center ml-[30px]">
           <p>COLLECTION DROPPING SOON</p>

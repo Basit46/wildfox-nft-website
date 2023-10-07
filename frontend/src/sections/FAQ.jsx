@@ -5,11 +5,13 @@ import { questionsList } from "../data/questions";
 
 const FAQ = () => {
   return (
-    <div className="w-full min-h-[100vh] bg-[#f9f0dc] px-[30px] xmd:px-[70px] pb-[100px] xl:flex justify-between">
+    <div className="w-full bg-[#f9f0dc] px-[30px] xmd:px-[70px] pb-[100px] xl:flex justify-between">
       <div className="relative">
-        <h1 className="font-Gulfs text-[84px] leading-[1]">FAQ</h1>
+        <h1 className="font-Gulfs text-[55px] xmd:text-[84px] leading-[1]">
+          FAQ
+        </h1>
         <img
-          className="absolute top-[15px] left-[-50px] rotate-[-20deg]"
+          className="hidden xmd:block absolute top-[15px] left-[-50px] rotate-[-20deg]"
           src={wfs}
           alt="wfs text"
         />

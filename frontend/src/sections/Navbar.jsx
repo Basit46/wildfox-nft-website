@@ -12,15 +12,21 @@ const Navbar = ({ isOpen, setIsOpen }) => {
       gsap.fromTo(item, { yPercent: 100 }, { yPercent: 0, duration: 0.5 })
     );
   }, []);
+
+  //func to close menu
+  function closeMenu() {
+    setIsOpen(false);
+  }
   return (
     <nav
       id="nav"
-      className="w-full bg-[#fbbf2d] px-[27px] py-[24px] flex justify-between items-center"
+      className="w-full bg-[#fbbf2d] h-[15vh] vsm:h-fit px-[27px] vsm:py-[24px] flex justify-between items-center"
     >
       <img
+        onClick={closeMenu}
         ref={(e) => navItems.current.push(e)}
         src={logo}
-        className="w-[250px] h-[72.05px] z-[5]"
+        className="w-[170px] sm:w-[250px] h-fit sm:h-[72.05px] z-[5]"
         alt="logo"
       />
 
@@ -31,7 +37,7 @@ const Navbar = ({ isOpen, setIsOpen }) => {
       >
         <li ref={(e) => navItems.current.push(e)}>
           <ScrollLink
-            onClick={() => setIsOpen(false)}
+            onClick={closeMenu}
             to="about"
             duration={1000}
             smooth="true"
@@ -41,7 +47,7 @@ const Navbar = ({ isOpen, setIsOpen }) => {
         </li>
         <li ref={(e) => navItems.current.push(e)}>
           <ScrollLink
-            onClick={() => setIsOpen(false)}
+            onClick={closeMenu}
             to="roadmap"
             duration={1000}
             smooth="true"
@@ -51,7 +57,7 @@ const Navbar = ({ isOpen, setIsOpen }) => {
         </li>
         <li ref={(e) => navItems.current.push(e)}>
           <ScrollLink
-            onClick={() => setIsOpen(false)}
+            onClick={closeMenu}
             to="team"
             duration={1000}
             smooth="true"
@@ -61,16 +67,27 @@ const Navbar = ({ isOpen, setIsOpen }) => {
         </li>
         <li ref={(e) => navItems.current.push(e)}>
           <a
-            onClick={() => setIsOpen(false)}
+            onClick={closeMenu}
             href="https://twitter.com/Basit0282"
             target="blank"
           >
             FOLLOW US
           </a>
         </li>
+        <button
+          ref={(e) => navItems.current.push(e)}
+          onClick={() => {
+            alert("Mint coming soon");
+            setIsOpen(false);
+          }}
+          className="flex vsm:hidden h-fit z-[5] bg-white border-black border-[3px] py-[16px] px-[34px] items-center gap-[8px] rounded-[8px]"
+        >
+          <p className="text-[14px] font-bold leading-[20px]">MINT NFT</p>{" "}
+          <Arrow />
+        </button>
       </ul>
 
-      <div className="xmd:hidden mr-[5px] sm:mr-[40px] flex-1 flex justify-end">
+      <div className="xmd:hidden vsm:mr-[20px] sm:mr-[40px] flex-1 flex justify-end">
         <FaBars
           onClick={() => setIsOpen((prev) => !prev)}
           className="text-[25px] z-[5] cursor-pointer"
@@ -80,7 +97,7 @@ const Navbar = ({ isOpen, setIsOpen }) => {
       <button
         ref={(e) => navItems.current.push(e)}
         onClick={() => alert("Mint coming soon")}
-        className="h-fit z-[5] bg-white border-black border-[3px] py-[16px] px-[34px] flex items-center gap-[8px] rounded-[8px]"
+        className="hidden h-fit z-[5] bg-white border-black border-[3px] py-[16px] px-[34px] vsm:flex items-center gap-[8px] rounded-[8px]"
       >
         <p className="text-[14px] font-bold leading-[20px]">MINT NFT</p>{" "}
         <Arrow />

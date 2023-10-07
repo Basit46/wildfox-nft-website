@@ -46,13 +46,13 @@ const Hero = () => {
   return (
     <div
       id="hero"
-      className="w-full h-[100vh] xmd:h-[756px] overflow-hidden relative bg-[#fbbf2d] pt-[20px] pb-[40px] flex flex-col justify-between"
+      className="w-full h-[80vh] vsm:h-[85vh] xmd:h-[756px] overflow-hidden relative bg-[#fbbf2d] pt-[20px] pb-[40px] flex flex-col justify-between"
     >
       <div>
         <div className="overflow-hidden">
           <h1
             ref={(e) => heroTexts.current.push(e)}
-            className="w-full font-Gulfs text-[85px] xmd:text-[100px] xl:text-[140px] leading-[1.1] xmd:leading-[124px] tracking-[5px] text-center text-[#f8450b]"
+            className="w-full font-Gulfs text-[60px] vsm:text-[85px] xmd:text-[100px] xl:text-[140px] leading-[1.1] xmd:leading-[124px] tracking-[5px] text-center text-[#f8450b]"
           >
             WILD
             <br className="sm:hidden" />
@@ -62,7 +62,7 @@ const Hero = () => {
         <div className="overflow-hidden">
           <h1
             ref={(e) => heroTexts.current.push(e)}
-            className="w-full font-Gulfs text-[85px] xmd:text-[100px] xl:text-[140px] leading-[1.1] xmd:leading-[124px] tracking-[5px] text-center text-white"
+            className="w-full font-Gulfs text-[60px] vsm:text-[85px] xmd:text-[100px] xl:text-[140px] leading-[1.1] xmd:leading-[124px] tracking-[5px] text-center text-white"
           >
             SQUAD
           </h1>

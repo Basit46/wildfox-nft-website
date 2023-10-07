@@ -10,19 +10,19 @@ const About = () => {
     <div id="about" className="about-section w-full h-fit my-[80px]">
       <img className="mx-auto mb-[40px]" src={about} alt="about text" />
       <div className="relative">
-        <h1 className="flex items-center gap-[20px] justify-center">
+        <h1 className="flex items-center flex-col vsm:flex-row gap-[5px] vsm:gap-[20px] justify-center">
           <span className="text-border">10,000</span>{" "}
           <img className="emoji" src={emoji1} alt="emoji" />
           <span>UNQIUE WILD</span>
         </h1>
 
-        <h1 className="my-[5px] flex items-center gap-[20px] justify-center">
+        <h1 className="my-[5px] flex flex-col vsm:flex-row items-center gap-[5px] vsm:gap-[20px] justify-center">
           <span>FOX NFT LIVING</span>
           <img className="emoji" src={emoji2} alt="emoji" />{" "}
           <span className="text-border">ON THE</span>
         </h1>
 
-        <h1 className="flex items-center gap-[20px] justify-center">
+        <h1 className="flex items-center flex-col vsm:flex-row gap-[5px] vsm:gap-[20px] justify-center">
           <span className="text-border">ETHEREUM</span>
           <img className="emoji" src={emoji3} alt="emoji" />
           <span>BLOCKCHAIN</span>
@@ -35,7 +35,7 @@ const About = () => {
           alt="arrow"
         />
       </div>
-      <p className="w-[80%] md:w-[674px] mx-auto mt-[40px] text-[#333] text-center text-[16.8px] font-medium leading-[23.5px]">
+      <p className="w-[90%] vsm:w-[80%] md:w-[674px] mx-auto mt-[40px] text-[#333] text-center text-[16.8px] font-medium leading-[23.5px]">
         Welcome to our Wild Fox Squad! Meet our collection of 10k unique Wild
         Foxes. Support and join our community, crazy adventures and fantastic
         prizes are waiting for you.

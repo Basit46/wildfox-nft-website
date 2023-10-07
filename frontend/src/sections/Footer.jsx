@@ -25,10 +25,10 @@ const Footer = () => {
       <img className="mx-auto" src={logo} alt="logo" />
 
       <div className="relative">
-        <h1 className="mt-[40px] mb-[20px] font-Gulfs text-white text-[55px] xmd:text-[84px] leading-[1.1] xmd:leading-[75.6px] text-center">
+        <h1 className="mt-[40px] mb-[20px] font-Gulfs text-white text-[40px] vsm:text-[55px] xmd:text-[84px] leading-[1.1] xmd:leading-[75.6px] text-center">
           FOLLOW US
         </h1>
-        <h2 className="font-Gulfs text-[55px] xmd:text-[84px] leading-[1.1] xmd:leading-[75.6px] text-center">
+        <h2 className="font-Gulfs text-[40px] vsm:text-[55px] xmd:text-[84px] leading-[1.1] xmd:leading-[75.6px] text-center">
           ON SOCIAL <br /> MEDIA
         </h2>
 

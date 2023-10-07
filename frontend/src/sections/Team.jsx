@@ -10,18 +10,20 @@ const Team = () => {
   return (
     <div
       id="team"
-      className="team-section mt-[50px] py-[100px] w-full bg-[#f9f0dc]"
+      className="team-section mt-[50px] py-[50px] vsm:py-[100px] w-full bg-[#f9f0dc]"
     >
       <div className="mx-auto w-fit relative">
-        <h1 className="font-Gulfs text-[84px]">TEAM</h1>
+        <h1 className="font-Gulfs text-[50px] vsm:text-[55px] xmd:text-[84px]">
+          TEAM
+        </h1>
         <img
-          className="absolute top-[10px] right-[-50px] rotate-[20deg]"
+          className="hidden vsm:block absolute top-[10px] right-[-50px] rotate-[20deg]"
           src={wild}
           alt="wild text"
         />
       </div>
 
-      <div className="mt-[100px] flex flex-col xl:flex-row items-center xl:items-start justify-center gap-[50px]">
+      <div className="mt-[50px] vsm:mt-[100px] flex flex-col xl:flex-row items-center xl:items-start justify-center gap-[50px]">
         <div className="member w-[80%] xmd:w-[530px] h-fit xl:h-[779px] flex flex-col items-center xl:items-start justify-between gap-[20px] xl:gap-0 rounded-[20px] p-[30px] xmd:p-[70px] bg-[#fffdf1] border-[1px] border-black ">
           <img className="w-[200px] xmd:w-auto" src={mem1} alt="member" />
           <div>

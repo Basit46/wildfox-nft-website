@@ -1,37 +1,9 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import badge from "../assets/badge.png";
-import { gsap } from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
-
-const RoadmapBox = ({ item, index }) => {
-  const boxRef = useRef();
-  const topVal = 600 * index;
-
-  useEffect(() => {
-    gsap.fromTo(
-      boxRef.current,
-      {
-        y: topVal,
-      },
-      {
-        y: 0,
-        duration: 1,
-        scrollTrigger: {
-          trigger: boxRef.current,
-          scrub: 1,
-          start: `top ${20}%`,
-        },
-      }
-    );
-  }, []);
-
+const ResponsiveRoadmapBox = ({ item, index }) => {
   return (
-    <div
-      ref={boxRef}
-      className="roadmap-box absolute left-0 w-full h-[80vh] xmd:h-[600px] bg-white border-[2px] border-black rounded-[20px] flex flex-col xmd:flex-row gap-[20px] xmd:gap-[60px] p-[25px] xmd:p-0 justify-center items-center"
-    >
+    <div className="roadmap-box relative mb-[30px] w-full h-[80vh] xmd:h-[600px] bg-white border-[2px] border-black rounded-[20px] flex flex-col xmd:flex-row gap-[20px] xmd:gap-[60px] p-[25px] xmd:p-0 justify-center items-center">
       {/* Done badge */}
       <img
         className={`${
@@ -80,4 +52,4 @@ const RoadmapBox = ({ item, index }) => {
   );
 };
 
-export default RoadmapBox;
+export default ResponsiveRoadmapBox;
