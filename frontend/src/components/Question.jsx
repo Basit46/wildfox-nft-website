@@ -3,10 +3,11 @@ import { IoIosArrowDown } from "react-icons/io";
 
 const Question = ({ question }) => {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div
+    <button
       onClick={() => setIsOpen((prev) => !prev)}
-      className="question w-full h-fit mb-[30px] bg-[#fffdf1] border-[1px] border-black p-[30px] rounded-[20px]"
+      className="question text-left w-full h-fit mb-[30px] bg-[#fffdf1] border-[1px] border-black p-[30px] rounded-[20px]"
     >
       <div className="w-full flex items-center justify-between">
         <h1 className="uppercase font-Gulfs text-[17px] vsm:text-[20px] md:text-[30px] xmd:text-[42px] leading-[1.2]">
@@ -31,7 +32,7 @@ const Question = ({ question }) => {
           asperiores nostrum!
         </p>
       </div>
-    </div>
+    </button>
   );
 };
 

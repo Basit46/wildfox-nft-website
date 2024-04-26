@@ -9,7 +9,7 @@ const Hero = () => {
   const heroImg = useRef(null);
 
   //State and UseEffect to change hero image every second
-  const [currImgIndex, setCurrImgIndex] = useState(0);
+  const [currImgIndex, setCurrImgIndex] = useState(8);
   useEffect(() => {
     let i = 0;
     const intervalId = setInterval(() => {
@@ -20,7 +20,7 @@ const Hero = () => {
         setCurrImgIndex(0);
         i = 1;
       }
-    }, 1000);
+    }, 2000);
 
     return () => {
       clearInterval(intervalId);

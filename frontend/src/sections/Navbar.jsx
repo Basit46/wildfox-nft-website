@@ -23,7 +23,6 @@ const Navbar = ({ isOpen, setIsOpen }) => {
       className="w-full bg-[#fbbf2d] h-[15vh] vsm:h-fit px-[27px] vsm:py-[24px] flex justify-between items-center"
     >
       <img
-        onClick={closeMenu}
         ref={(e) => navItems.current.push(e)}
         src={logo}
         className="w-[170px] sm:w-[250px] h-fit sm:h-[72.05px] z-[5]"
